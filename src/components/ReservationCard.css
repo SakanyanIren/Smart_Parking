@@ -1,0 +1,224 @@
+.reservation-card {
+  background: #FFFFFF;
+  border: 1.5px solid #C7D7FD;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0 2px 12px rgba(23, 65, 212, 0.08);
+  transition: all 0.2s ease;
+}
+
+.reservation-card:hover {
+  border-color: #1741D4;
+  box-shadow: 0 4px 20px rgba(23, 65, 212, 0.14);
+}
+
+.card-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #1741D4;
+}
+
+.card-corner.top-left {
+  top: 8px;
+  left: 8px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.card-corner.top-right {
+  top: 8px;
+  right: 8px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.card-corner.bottom-left {
+  bottom: 8px;
+  left: 8px;
+  border-right: none;
+  border-top: none;
+}
+
+.card-corner.bottom-right {
+  bottom: 8px;
+  right: 8px;
+  border-left: none;
+  border-top: none;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E8EEFF;
+}
+
+.spot-number {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.status-badge {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.status-badge.active {
+  background: #FEF9C3;
+  color: #CA8A04;
+  border: 1px solid #FDE68A;
+}
+
+.status-badge.checked-in {
+  background: #E8EEFF;
+  color: #1741D4;
+  border: 1px solid #C7D7FD;
+}
+
+.card-body {
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #F0F4FF;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-family: 'Courier New', monospace;
+  color: #64748B;
+  font-size: 13px;
+}
+
+.info-value {
+  font-family: 'Courier New', monospace;
+  color: #1E293B;
+  font-size: 13px;
+  text-align: right;
+}
+
+.info-value.price {
+  color: #1741D4;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.reservation-id {
+  font-size: 11px;
+  color: #64748B;
+  word-break: break-all;
+}
+
+.card-actions {
+  border-top: 1px solid #E8EEFF;
+  padding-top: 20px;
+}
+
+.check-in-button {
+  width: 100%;
+  background: #1741D4;
+  border: none;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(23, 65, 212, 0.25);
+}
+
+.check-in-button:hover {
+  background: #0F2FAE;
+  box-shadow: 0 4px 14px rgba(23, 65, 212, 0.35);
+  transform: translateY(-1px);
+}
+
+.check-in-button:active {
+  transform: translateY(0);
+}
+
+.check-in-help {
+  font-family: 'Courier New', monospace;
+  color: rgba(23, 65, 212, 0.5);
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.cancel-button {
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid #DC2626;
+  color: #DC2626;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.cancel-button:hover {
+  background: rgba(220, 38, 38, 0.06);
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+  transform: translateY(-1px);
+}
+
+.cancel-button:active {
+  transform: translateY(0);
+}
+
+.cancel-help {
+  font-family: 'Courier New', monospace;
+  color: rgba(220, 38, 38, 0.6);
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .reservation-card {
+    padding: 20px 16px;
+  }
+
+  .spot-number {
+    font-size: 20px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .info-value {
+    text-align: left;
+  }
+}

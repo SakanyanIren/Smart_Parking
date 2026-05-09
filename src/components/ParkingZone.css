@@ -1,0 +1,145 @@
+.parking-zone {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.zone-header {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #C7D7FD;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(23, 65, 212, 0.08);
+}
+
+.zone-header h2 {
+  margin: 0 0 10px 0;
+  color: #1741D4;
+  font-size: 1.8rem;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.navigation-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #FFF7ED;
+  border: 1px solid #FED7AA;
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-indicator {
+  color: #EA580C;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  animation: pulse-nav 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-nav {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.cancel-nav-btn {
+  padding: 6px 12px;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  color: #DC2626;
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-nav-btn:hover {
+  background: rgba(220, 38, 38, 0.15);
+  border-color: #DC2626;
+}
+
+.zone-summary {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #F0F4FF;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #C7D7FD;
+}
+
+.summary-label {
+  font-size: 0.75rem;
+  color: #64748B;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.summary-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+}
+
+.summary-value.available {
+  color: #16A34A;
+}
+
+.summary-value.occupied {
+  color: #DC2626;
+}
+
+.summary-value.reserved {
+  color: #CA8A04;
+}
+
+.summary-value:not(.available):not(.occupied):not(.reserved) {
+  color: #1741D4;
+}
+
+.sections-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .sections-container {
+    grid-template-columns: 1fr;
+  }
+
+  .zone-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .summary-value {
+    font-size: 1.4rem;
+  }
+}

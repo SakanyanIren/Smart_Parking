@@ -1,0 +1,31 @@
+.parking-place {
+  transition: all 0.3s ease;
+}
+
+.parking-place:hover .status-glow {
+  stroke-width: 3;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+.parking-place:hover {
+  filter: brightness(1.15);
+}
+
+.parking-place:active {
+  filter: brightness(0.9);
+}
+
+/* Subtle pulse animation for status glow */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.parking-place .status-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><style>
+    .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-secondary); margin: 2rem 0 1rem; }
+    .screens-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .phone { border-radius: 28px; padding: 20px 14px; border: 1.5px solid; }
+    .screen-label { font-size: 11px; font-weight: 500; text-align: center; margin-bottom: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+  
+    .corner-bracket { position: absolute; width: 14px; height: 14px; }
+    .corner-bracket.tl { top: 0; left: 0; border-top: 2px solid; border-left: 2px solid; }
+    .corner-bracket.tr { top: 0; right: 0; border-top: 2px solid; border-right: 2px solid; }
+    .corner-bracket.bl { bottom: 0; left: 0; border-bottom: 2px solid; border-left: 2px solid; }
+    .corner-bracket.br { bottom: 0; right: 0; border-bottom: 2px solid; border-right: 2px solid; }
+  
+    .login-box { border-radius: 12px; border: 1.5px solid; padding: 20px 16px; position: relative; margin-bottom: 12px; }
+    .login-title { font-size: 18px; font-weight: 500; text-align: center; letter-spacing: 0.15em; margin-bottom: 2px; }
+    .login-sub { font-size: 9px; letter-spacing: 0.12em; text-align: center; margin-bottom: 18px; }
+    .field-label { font-size: 9px; letter-spacing: 0.1em; margin-bottom: 5px; font-weight: 500; }
+    .field-input { border-radius: 6px; border: 1px solid; padding: 8px 10px; font-size: 10px; width: 100%; box-sizing: border-box; margin-bottom: 12px; }
+    .login-btn { border-radius: 7px; width: 100%; padding: 10px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; border: none; cursor: default; margin-bottom: 8px; }
+    .back-btn { border-radius: 7px; width: 100%; padding: 8px; font-size: 10px; letter-spacing: 0.08em; background: transparent; cursor: default; text-align: center; border: 1px solid; }
+  
+    .nav-bar { border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; border: 1px solid; }
+    .nav-logo { font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+    .nav-logo span { font-size: 18px; font-weight: 700; }
+    .nav-links { display: flex; flex-direction: column; gap: 4px; }
+    .nav-link { border-radius: 6px; padding: 6px 10px; font-size: 9px; letter-spacing: 0.08em; font-weight: 500; text-align: center; cursor: default; }
+  
+    .zone-card { border-radius: 10px; padding: 12px; margin-bottom: 10px; border: 1px solid; }
+    .zone-title { font-size: 9px; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 8px; }
+    .zone-btn { border-radius: 5px; padding: 6px 10px; font-size: 9px; font-weight: 600; letter-spacing: 0.06em; width: 100%; margin-bottom: 5px; border: none; cursor: default; text-align: center; }
+    .zone-btn-outline { border-radius: 5px; padding: 5px 10px; font-size: 9px; font-weight: 500; letter-spacing: 0.06em; width: 100%; border: 1px solid; background: transparent; cursor: default; text-align: center; }
+  
+    .status-card { border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; border: 1px solid; }
+    .status-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .status-item { display: flex; align-items: center; gap: 5px; font-size: 9px; letter-spacing: 0.06em; }
+    .status-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  
+    .stats-card { border-radius: 10px; padding: 12px; border: 1px solid; }
+    .stats-title { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; margin-bottom: 10px; }
+    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .stat-box { border-radius: 6px; padding: 8px; border: 1px solid; }
+    .stat-label { font-size: 8px; letter-spacing: 0.08em; margin-bottom: 3px; }
+    .stat-val { font-size: 16px; font-weight: 500; }
+    .stat-box-full { border-radius: 6px; padding: 8px; border: 1px solid; margin-top: 6px; }
+  </style>
+  
+  </head>
+  <body><div style="padding: 0.5rem 0 1.5rem;">
+
+    <div class="section-label">Option E — Cobalt White &nbsp;|&nbsp; Option A — Sky White</div>
+  
+    <div class="screens-row">
+  
+      <!-- COBALT WHITE LOGIN -->
+      <div>
+        <div class="screen-label" style="color:#1741D4;">Login screen</div>
+        <div class="phone" style="background:#F0F4FF; border-color:#C7D7FD;">
+          <div class="login-box" style="background:#FFFFFF; border-color:#C7D7FD;">
+            <div class="corner-bracket tl" style="border-color:#1741D4;"></div>
+            <div class="corner-bracket tr" style="border-color:#1741D4;"></div>
+            <div class="corner-bracket bl" style="border-color:#1741D4;"></div>
+            <div class="corner-bracket br" style="border-color:#1741D4;"></div>
+            <div class="login-title" style="color:#1741D4;">LOGIN</div>
+            <div class="login-sub" style="color:#1741D480;">PARKING RESERVATION SYSTEM</div>
+            <div class="field-label" style="color:#1E293B;">EMAIL ADDRESS</div>
+            <div class="field-input" style="background:#F0F4FF; border-color:#C7D7FD; color:#1E293B;">sakanyaniren@gmail.com</div>
+            <div class="field-label" style="color:#1E293B;">PASSWORD</div>
+            <div class="field-input" style="background:#F0F4FF; border-color:#C7D7FD; color:#1E293B80;">Enter your password</div>
+            <button class="login-btn" style="background:#1741D4; color:#fff;">LOGIN</button>
+            <div class="back-btn" style="color:#1E293B; border-color:#C7D7FD;">← BACK</div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="screens-row" style="margin-top: 20px;">
+  
+      <!-- COBALT WHITE DASHBOARD -->
+      <div>
+        <div class="screen-label" style="color:#1741D4;">Dashboard</div>
+        <div class="phone" style="background:#F0F4FF; border-color:#C7D7FD;">
+          <div class="nav-bar" style="background:#1741D4; border-color:#1741D4;">
+            <div class="nav-logo" style="color:#fff;"><span style="color:#fff;">P</span>ark Station</div>
+            <div class="nav-links">
+              <div class="nav-link" style="background:#fff; color:#1741D4;">PARKING VIEW</div>
+              <div class="nav-link" style="color:#BFDBFE;">MY RESERVATIONS</div>
+              <div style="font-size:9px; color:#BFDBFE80; text-align:center; margin: 4px 0;">Logged in as:</div>
+              <div class="nav-link" style="border: 1px solid #ffffff40; color:#fff;">LOGOUT</div>
+            </div>
+          </div>
+          <div class="zone-card" style="background:#FFFFFF; border-color:#C7D7FD;">
+            <div class="zone-title" style="color:#64748B;">ZONES</div>
+            <div class="zone-btn" style="background:#1741D4; color:#fff;">ZONE A — TERMINAL 1</div>
+            <div class="zone-btn-outline" style="color:#1E293B; border-color:#C7D7FD;">ZONE B — TERMINAL 2</div>
+          </div>
+          <div class="status-card" style="background:#FFFFFF; border-color:#C7D7FD;">
+            <div class="zone-title" style="color:#64748B;">STATUS</div>
+            <div class="status-grid">
+              <div class="status-item" style="color:#1E293B;"><div class="status-dot" style="background:#16A34A;"></div>AVAILABLE</div>
+              <div class="status-item" style="color:#1E293B;"><div class="status-dot" style="background:#DC2626;"></div>OCCUPIED</div>
+              <div class="status-item" style="color:#1E293B;"><div class="status-dot" style="background:#CA8A04;"></div>RESERVED</div>
+              <div class="status-item" style="color:#1E293B;"><div class="status-dot" style="background:#EA580C;"></div>RESERVING</div>
+            </div>
+          </div>
+          <div class="stats-card" style="background:#FFFFFF; border-color:#C7D7FD;">
+            <div class="stats-title" style="color:#1741D4;">Կայանատեղի A — Տերմինալ 1</div>
+            <div class="stat-box-full" style="background:#E8EEFF; border-color:#C7D7FD;">
+              <div class="stat-label" style="color:#64748B;">TOTAL PLACES</div>
+              <div class="stat-val" style="color:#1741D4;">80</div>
+            </div>
+            <div class="stats-grid" style="margin-top:6px;">
+              <div class="stat-box" style="background:#DCFCE7; border-color:#BBF7D0;">
+                <div class="stat-label" style="color:#166534;">ԱԶԱՏ</div>
+                <div class="stat-val" style="color:#16A34A;">70</div>
+              </div>
+              <div class="stat-box" style="background:#FEE2E2; border-color:#FECACA;">
+                <div class="stat-label" style="color:#991B1B;">ԶԲԱՂՎԱԾ</div>
+                <div class="stat-val" style="color:#DC2626;">9</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div style="display:flex; gap:12px; margin-top: 20px;">
+      <button onclick="sendPrompt('Apply Cobalt White colors to my parking website code')" style="flex:1; border-radius:8px; padding:10px; background:#E8EEFF; border:1px solid #C7D7FD; color:#1741D4; font-size:12px; font-weight:500; cursor:pointer; letter-spacing:0.04em;">Use Cobalt White ↗</button>
+      <button onclick="sendPrompt('Apply Sky White colors to my parking website code')" style="flex:1; border-radius:8px; padding:10px; background:#EFF6FF; border:1px solid #BFDBFE; color:#2563EB; font-size:12px; font-weight:500; cursor:pointer; letter-spacing:0.04em;">Use Sky White ↗</button>
+    </div>
+  </div>
+  </body></html>

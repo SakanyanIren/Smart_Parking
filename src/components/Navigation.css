@@ -1,0 +1,136 @@
+.navigation {
+  background: #1741D4;
+  border-bottom: 1px solid rgba(23, 65, 212, 0.2);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(23, 65, 212, 0.2);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.logo-name {
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+  line-height: 0.7 !important;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-family: 'Courier New', monospace;
+  color: #BFDBFE;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link.active {
+  color: #1741D4;
+  border-color: transparent;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  font-family: 'Courier New', monospace;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.user-name {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.logout-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-link {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-user {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logout-button {
+    width: 100%;
+  }
+}

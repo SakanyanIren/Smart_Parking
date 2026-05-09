@@ -1,0 +1,147 @@
+.camera-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1000;
+  font-family: 'Courier New', monospace;
+}
+
+.camera-info {
+  position: absolute;
+  color: #1741D4;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  background: rgba(240, 244, 255, 0.9);
+  border: 1px solid rgba(23, 65, 212, 0.3);
+}
+
+.camera-info.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.camera-info.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.camera-info.recording {
+  top: 20px;
+  right: 280px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.camera-id {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.camera-location {
+  font-size: 12px;
+  color: #0F2FAE;
+  margin-top: 2px;
+}
+
+.camera-timestamp {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.rec-dot {
+  width: 10px;
+  height: 10px;
+  background: #DC2626;
+  border-radius: 50%;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Camera frame corners */
+.camera-corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(23, 65, 212, 0.5);
+}
+
+.top-left-corner {
+  top: 10px;
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.top-right-corner {
+  top: 10px;
+  right: 10px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.bottom-left-corner {
+  bottom: 10px;
+  left: 10px;
+  border-right: none;
+  border-top: none;
+}
+
+.bottom-right-corner {
+  bottom: 10px;
+  right: 10px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Vignette effect */
+.vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .camera-info {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+
+  .camera-id {
+    font-size: 13px;
+  }
+
+  .camera-timestamp {
+    font-size: 13px;
+  }
+
+  .camera-info.recording {
+    right: 20px;
+    top: 70px;
+  }
+}

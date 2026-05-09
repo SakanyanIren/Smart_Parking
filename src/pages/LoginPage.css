@@ -1,0 +1,349 @@
+.login-page {
+  min-height: 100vh;
+  background: #F0F4FF;
+}
+
+.login-content {
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-box {
+  background: #FFFFFF;
+  border: 1.5px solid #C7D7FD;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 24px rgba(23, 65, 212, 0.1);
+  position: relative;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 20px;
+}
+
+.login-header h1 {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.login-subtitle {
+  font-family: 'Courier New', monospace;
+  color: rgba(23, 65, 212, 0.5);
+  font-size: 11px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Corner frames */
+.corner-frame {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #1741D4;
+}
+
+.corner-frame.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner-frame.top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.corner-frame.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.corner-frame.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-family: 'Courier New', monospace;
+  color: #1E293B;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.form-group input {
+  background: #F0F4FF;
+  border: 1px solid #C7D7FD;
+  color: #1E293B;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1741D4;
+  box-shadow: 0 0 0 3px rgba(23, 65, 212, 0.1);
+}
+
+.form-group input::placeholder {
+  color: rgba(30, 41, 59, 0.35);
+}
+
+.form-group input.error {
+  border-color: #DC2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.error-message {
+  font-family: 'Courier New', monospace;
+  color: #DC2626;
+  font-size: 11px;
+}
+
+.login-button {
+  background: #1741D4;
+  border: none;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 28px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 6px;
+  transition: all 0.2s ease;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(23, 65, 212, 0.3);
+}
+
+.login-button:hover {
+  background: #0F2FAE;
+  box-shadow: 0 4px 14px rgba(23, 65, 212, 0.4);
+  transform: translateY(-1px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.login-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.login-button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+  background: #1741D4;
+}
+
+.form-group input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-error {
+  text-align: center;
+  padding: 10px;
+  background: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-radius: 6px;
+}
+
+.login-toggle {
+  margin-top: 10px;
+}
+
+.login-help {
+  font-family: 'Courier New', monospace;
+  color: rgba(30, 41, 59, 0.5);
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #1741D4;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.toggle-button:hover {
+  color: #0F2FAE;
+}
+
+.toggle-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Choice View Styles */
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.choice-description {
+  font-family: 'Courier New', monospace;
+  color: rgba(30, 41, 59, 0.6);
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.choice-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.choice-button {
+  background: #F0F4FF;
+  border: 1.5px solid #C7D7FD;
+  color: #1741D4;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  padding: 16px 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.2s ease;
+  border-radius: 7px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.choice-button:hover {
+  background: #1741D4;
+  border-color: #1741D4;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(23, 65, 212, 0.3);
+  transform: translateY(-2px);
+}
+
+.choice-button:active {
+  transform: translateY(0);
+}
+
+/* Back Button */
+.back-button {
+  background: transparent;
+  border: 1px solid #C7D7FD;
+  color: #1E293B;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  padding: 9px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+  border-radius: 7px;
+  margin-top: 8px;
+}
+
+.back-button:hover {
+  border-color: #1741D4;
+  color: #1741D4;
+}
+
+.back-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Resend Verification Link */
+.resend-link {
+  background: none;
+  border: none;
+  color: #1741D4;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+.resend-link:hover {
+  color: #0F2FAE;
+}
+
+.resend-link:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-header h1 {
+    font-size: 24px;
+  }
+
+  .login-subtitle {
+    font-size: 10px;
+  }
+
+  .choice-button {
+    font-size: 14px;
+    padding: 14px 24px;
+    letter-spacing: 3px;
+  }
+
+  .choice-description {
+    font-size: 11px;
+  }
+}

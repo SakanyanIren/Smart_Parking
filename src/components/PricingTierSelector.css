@@ -1,0 +1,144 @@
+.pricing-tier-selector {
+  padding: 20px;
+}
+
+.selector-title {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.tier-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tier-card {
+  background: #F0F4FF;
+  border: 1.5px solid #C7D7FD;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tier-card:hover {
+  border-color: #1741D4;
+  background: #E8EEFF;
+}
+
+.tier-card.selected {
+  border-color: #1741D4;
+  background: #E8EEFF;
+  box-shadow: 0 0 0 3px rgba(23, 65, 212, 0.1);
+}
+
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tier-radio {
+  width: 16px;
+  height: 16px;
+  accent-color: #1741D4;
+  cursor: pointer;
+}
+
+.tier-name {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.tier-rate {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 22px;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.tier-description {
+  font-family: 'Courier New', monospace;
+  color: #64748B;
+  font-size: 11px;
+  margin: 0;
+}
+
+.duration-section {
+  margin: 20px 0;
+  padding: 14px;
+  background: #F0F4FF;
+  border: 1px solid #C7D7FD;
+  border-radius: 8px;
+}
+
+.duration-label {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.duration-input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1.5px solid #C7D7FD;
+  color: #1E293B;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.duration-input:focus {
+  outline: none;
+  border-color: #1741D4;
+  box-shadow: 0 0 0 3px rgba(23, 65, 212, 0.1);
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background: #E8EEFF;
+  border: 1.5px solid #1741D4;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.total-label {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.total-amount {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .tier-cards {
+    grid-template-columns: 1fr;
+  }
+}

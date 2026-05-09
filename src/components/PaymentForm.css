@@ -1,0 +1,106 @@
+.payment-form {
+  padding: 20px;
+}
+
+.form-title {
+  font-family: 'Courier New', monospace;
+  color: #1741D4;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-subtitle {
+  font-family: 'Courier New', monospace;
+  color: #64748B;
+  font-size: 11px;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-family: 'Courier New', monospace;
+  color: #1E293B;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  background: #F0F4FF;
+  border: 1px solid #C7D7FD;
+  color: #1E293B;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1741D4;
+  box-shadow: 0 0 0 3px rgba(23, 65, 212, 0.1);
+}
+
+.form-group input::placeholder {
+  color: rgba(30, 41, 59, 0.35);
+}
+
+.form-group input.error {
+  border-color: #DC2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.error-message {
+  font-family: 'Courier New', monospace;
+  color: #DC2626;
+  font-size: 11px;
+  display: block;
+  margin-top: 4px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.security-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #F0F4FF;
+  border: 1px solid #C7D7FD;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.notice-icon {
+  font-size: 16px;
+}
+
+.notice-text {
+  font-family: 'Courier New', monospace;
+  color: #64748B;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

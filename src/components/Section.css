@@ -1,0 +1,119 @@
+.section {
+  background: #FFFFFF;
+  border: 1px solid #C7D7FD;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(23, 65, 212, 0.08);
+}
+
+.section-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.section-header h3 {
+  margin: 0;
+  color: #1741D4;
+  font-size: 1.3rem;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+  border: 1px solid;
+  background: #F0F4FF;
+}
+
+.stat.available {
+  color: #16A34A;
+  border-color: #BBF7D0;
+  background: #DCFCE7;
+}
+
+.stat.occupied {
+  color: #DC2626;
+  border-color: #FECACA;
+  background: #FEE2E2;
+}
+
+.stat.reserved {
+  color: #CA8A04;
+  border-color: #FDE68A;
+  background: #FEF9C3;
+}
+
+.section-svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #C7D7FD;
+  border-radius: 6px;
+}
+
+/* Navigation animations */
+.route-line {
+  animation: route-dash 1s linear infinite;
+}
+
+@keyframes route-dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.target-pulse {
+  animation: pulse-target 2s ease-in-out infinite;
+}
+
+.target-pulse-2 {
+  animation: pulse-target 2s ease-in-out infinite 0.5s;
+}
+
+@keyframes pulse-target {
+  0%, 100% {
+    r: 35;
+    opacity: 0.6;
+  }
+  50% {
+    r: 45;
+    opacity: 0.2;
+  }
+}
+
+.navigating-car {
+  filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.6));
+}
+
+.car-glow {
+  animation: car-glow-pulse 1s ease-in-out infinite;
+}
+
+@keyframes car-glow-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    r: 45;
+  }
+  50% {
+    opacity: 0.6;
+    r: 50;
+  }
+}
